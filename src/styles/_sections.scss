@@ -76,20 +76,23 @@
         width: 200px;
         margin: 5%;
         transition: 0.3s;
-    }
 
-    .img__exemple__el:hover {
-        background-image: url(../assets/images/roro.png);
-        transform: scale(110%);
+        &:hover {
+            background-image: url(../assets/images/roro.png);
+            transform: scale(110%);
+        }
     }
 
     .img__exemple__el--bis {
         background-image: url(../assets/images/crokis_seiko.png);
+
+        &:hover {
+            background-image: url(../assets/images/seiko.png);
+            transform: scale(110%);
+        }
     }
 
-    .img__exemple__el--bis:hover {
-        background-image: url(../assets/images/seiko.png);
-    }
+
 }
 
 @media screen and (min-width: 1130px) {

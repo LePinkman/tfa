@@ -36,6 +36,7 @@
     margin: 0;
     padding-top: 20px;
     font-weight: 700;
+    margin-top: 20%;
 
 }
 
@@ -68,12 +69,19 @@
     font-weight: 600;
     color: black;
 
+    &:hover {
+        color: #C08B8B;
+    }
 }
 
 .lien--ytb {
     color: #C08B8B;
     text-decoration: underline;
     font-weight: 300;
+
+    &:hover {
+        color: #9C528B;
+    }
 }
 
 .line {
