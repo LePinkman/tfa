@@ -1,0 +1,159 @@
+.bg-rose {
+    background-color: #C08B8B;
+    color: white;
+    padding: 0 21px 0 21px;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 50px;
+
+    div {
+        margin: auto;
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+.bandeau {
+    grid-column: 1/9;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.section__top {
+    grid-column: 1/5;
+}
+
+.section {
+    grid-column: 2/4;
+    margin: 20% 0 20% 0;
+}
+
+.img__grid {
+    display: grid;
+    grid-column: 3/7;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    margin: 10% 0 10% 0;
+
+    .img__grid__gauche {
+        grid-column: 1/3;
+        width: 100%;
+    }
+
+    .img__grid__droite {
+        grid-column: 4;
+        width: 100%;
+    }
+
+    .img__grid__centre {
+        margin-top: 30px;
+        grid-column: 1/5;
+        width: 100%;
+    }
+}
+
+.remerciements {
+    display: flex;
+}
+
+.img__exemple {
+    display: flex;
+    justify-content: center;
+
+    .img__exemple__el {
+        background-image: url(../assets/images/crokis_roro.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 500px;
+        width: 200px;
+        margin: 5%;
+        transition: 0.3s;
+    }
+
+    .img__exemple__el:hover {
+        background-image: url(../assets/images/roro.png);
+        transform: scale(110%);
+    }
+
+    .img__exemple__el--bis {
+        background-image: url(../assets/images/crokis_seiko.png);
+    }
+
+    .img__exemple__el--bis:hover {
+        background-image: url(../assets/images/seiko.png);
+    }
+}
+
+@media screen and (min-width: 1130px) {
+    .section {
+        display: grid;
+        grid-template-columns: 2fr 5fr 2fr 5fr 2fr 5fr 2fr;
+
+        .section__gridtxtgauche {
+            grid-column: 2/5;
+            grid-row: 1;
+        }
+
+        .titre__vertical--droite {
+            position: absolute;
+            right: 50px;
+            overflow: hidden;
+        }
+
+        .section__gridtxtdroite {
+            grid-column: 4/7;
+        }
+
+        .titre__vertical--gauche {
+            position: absolute;
+            left: -80px;
+
+        }
+
+        .remerciements {
+            grid-column: 3/7;
+            display: flex;
+
+            .ligne {
+                height: 80%;
+                grid-column: 3;
+            }
+        }
+
+        img {
+            width: 30%;
+            height: auto;
+            margin: auto 10px auto 0;
+        }
+    }
+
+    .bg-rose {
+        background-color: #C08B8B;
+        color: white;
+        padding: 0 21px 0 21px;
+        height: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+
+        div {
+            margin: auto 20px auto 40px;
+        }
+
+
+        img {
+            width: 40%;
+        }
+
+    }
+
+
+}
