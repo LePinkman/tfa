@@ -12,13 +12,21 @@
     /*border-bottom: solid 3px;*/
 }
 
+.nav--uikit {
+    position: initial;
+    top: auto;
+    z-index: 0;
+    left: auto;
+    /*border-bottom: solid 3px;*/
+}
+
 .nav__menu {
     text-align: center;
     flex-direction: column;
     font-size: 22px;
     position: absolute;
     width: 100%;
-    margin-top: 550px;
+    margin-top: 630px;
     background-color: #C08B8B;
 }
 
@@ -103,6 +111,27 @@
     display: none;
 }
 
+.nav--others {
+    align-items: initial;
+}
+
+.nav__menu--others {
+    margin-top: 0;
+    text-align: center;
+    flex-direction: column;
+    font-size: 22px;
+    position: absolute;
+    width: 100%;
+    background-color: #C08B8B;
+}
+
+.logo__nav {
+    color: white;
+    margin: 10px;
+    font-family: "heebo";
+    font-size: 30px;
+    font-weight: 700;
+}
 
 @media screen and (min-width: 1130px) {
 
@@ -110,6 +139,14 @@
         position: fixed;
         justify-content: space-around;
         height: 80px;
+    }
+
+    .nav--uikit {
+        position: initial;
+        top: auto;
+        z-index: 0;
+        left: auto;
+        /*border-bottom: solid 3px;*/
     }
 
     .nav__menu {
@@ -137,5 +174,4 @@
     .burger__lines {
         display: none;
     }
-
 }

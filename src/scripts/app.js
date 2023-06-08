@@ -3,7 +3,7 @@ const nav = document.querySelector("nav__menu");
 const navList = document.querySelectorAll(".nav__menu li");
 
 const options = {
-    threshold: "0.3"
+    threshold: "0.1"
 };
 
 const observer = new IntersectionObserver((entries) => {
