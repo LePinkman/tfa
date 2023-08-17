@@ -1,0 +1,12 @@
+.icone {
+    margin-top: 20px;
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+    animation: anim 7s ease forwards;
+}
+
+@keyframes anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

@@ -31,38 +31,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/app.css">
-
   <script src="scripts/app.js" defer></script>
 </head>
 
 <body>
   <nav class="nav">
-    <button class="burger__lines">
+    <button class="burger__lines">menu
       <span class="burger__line"></span>
       <span class="burger__line burger__line--rotate"></span>
       <span class="burger__line burger__line--none"></span>
     </button>
     <ul class="nav__menu burger__close">
-      <li data-nav="intro" class="nav__menu__el"><a href="#intro">Introduction</a></li>
-      <li data-nav="renc" class="nav__menu__el"><a href="#renc">Rencontres</a></li>
-      <li data-nav="prob" class="nav__menu__el"><a href="#prob">Problématiques</a></li>
-      <li data-nav="solu" class="nav__menu__el"><a href="#solu">Solutions</a></li>
-      <li data-nav="mod" class="nav__menu__el"><a href="#mod">Modules</a></li>
-      <li data-nav="exemp" class="nav__menu__el"><a href="#exemp">Exemples</a></li>
-      <li data-nav="concep" class="nav__menu__el"><a href="#concep">Conception</a></li>
+      <li data-nav="intro"><a href="#intro">Introduction</a></li>
+      <li data-nav="renc"><a href="#renc">Rencontres</a></li>
+      <li data-nav="prob"><a href="#prob">Problématiques</a></li>
+      <li data-nav="solu"><a href="#solu">Solutions</a></li>
+      <li data-nav="mod"><a href="#mod">Modules</a></li>
+      <li data-nav="exemp"><a href="#exemp">Exemples</a></li>
+      <li data-nav="concep"><a href="#concep">Conception</a></li>
     </ul>
   </nav>
   <main class="main__grid">
     <section class="section__top">
       <div class="bg-rose">
         <div>
-          <h1 class="titre__big">MANY<br>WATCH</h1>
+          <svg class="icone" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 254 149.5"
+            enable-background="new 0 0 254 149.5" xml:space="preserve">
+            <g>
+              <polygon fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="15.997,40.316 14.922,16.652 
+		27.925,53.202 35.24,53.202 48.254,16.693 47.203,40.316 47.203,53.202 57.969,53.202 57.969,3.437 52.979,3.437 48.843,3.437 
+		43.921,3.437 31.617,38.949 19.278,3.437 14.322,3.437 10.22,3.437 5.23,3.437 5.23,53.202 15.997,53.202 	" />
+              <path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10"
+                d="M78.73,43.29h17.604l3.268,9.912h11.45
+		L92.458,3.437h-2.7h-4.58h-2.666L64.021,53.202h11.45L78.73,43.29z M87.521,16.556l5.951,18.053H81.585L87.521,16.556z" />
+              <polygon fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10"
+                points="127.734,21.176 147.045,53.202 
+		157.778,53.202 157.778,3.437 147.08,3.437 147.08,35.497 127.734,3.437 117.001,3.437 117.001,53.202 127.734,53.202 	" />
+              <polygon fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="179.928,53.202 190.832,53.202 
+		190.832,35.189 207.067,3.437 195.377,3.437 185.363,25.517 175.382,3.437 163.659,3.437 179.928,35.189 	" />
+              <polygon fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10"
+                points="43.979,121.939 36.094,87.437 
+		32.779,87.437 30.42,87.437 27.037,87.437 19.203,121.91 12.75,87.437 2.051,87.437 12.989,137.202 17.637,137.202 19.859,137.202 
+		23.858,137.202 31.543,104.928 39.273,137.202 43.238,137.202 45.494,137.202 50.142,137.202 61.045,87.437 50.381,87.437 	" />
+              <path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M86.921,87.437h-4.58h-2.666l-18.491,49.766h11.45
+		l3.259-9.912h17.604l3.268,9.912h11.45L89.622,87.437H86.921z M78.748,118.608l5.936-18.053l5.951,18.053H78.748z" />
+              <polygon fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10"
+                points="121.787,87.437 106.884,87.437 
+		106.884,96.118 121.787,96.118 121.787,137.202 132.519,137.202 132.519,96.118 147.626,96.118 147.626,87.437 132.519,87.437 	" />
+              <path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="M165.333,102.117
+		c0.729-2.244,1.823-3.902,3.281-4.973c1.458-1.071,3.292-1.606,5.503-1.606c3.327,0,5.679,0.758,7.058,2.273
+		c1.378,1.516,2.17,3.731,2.375,6.648h10.732c-0.319-3.418-1.271-6.46-2.854-9.126c-1.584-2.666-3.817-4.768-6.699-6.306
+		c-2.883-1.538-6.42-2.307-10.613-2.307c-4.216,0-7.873,0.98-10.972,2.939c-3.099,1.96-5.509,4.74-7.229,8.34
+		c-1.721,3.601-2.581,7.873-2.581,12.817v3.042c0,4.922,0.832,9.183,2.495,12.783c1.663,3.601,4.044,6.375,7.144,8.323
+		c3.099,1.948,6.79,2.922,11.074,2.922c4.102,0,7.616-0.74,10.544-2.222c2.928-1.481,5.212-3.532,6.853-6.152
+		c1.641-2.62,2.563-5.617,2.769-8.989h-10.698c-0.137,1.914-0.559,3.509-1.265,4.785c-0.707,1.276-1.732,2.228-3.076,2.854
+		c-1.345,0.627-3.054,0.94-5.127,0.94c-2.37,0-4.272-0.552-5.708-1.658c-1.436-1.105-2.478-2.786-3.127-5.042
+		s-0.974-5.104-0.974-8.545v-3.11C164.24,107.238,164.604,104.361,165.333,102.117z" />
+              <polygon fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="232.328,87.437 232.328,107.432 
+		212.982,107.432 212.982,87.437 202.215,87.437 202.215,137.202 212.982,137.202 212.982,116.079 232.328,116.079 232.328,137.202 
+		243.06,137.202 243.06,87.437 	" />
+            </g>
+          </svg>
           <p class="txt">Une application pour les passionnés d'horlogerie</p>
         </div>
         <img src="assets/images/bg_montre.png" alt="Crokis d'une montre noir sur fond blanc">
       </div>
-      <h2 class="titre__slogan">Et si il y avait des alternatives aux montres rares et chères qui pourraient nous plaire
-        tout autant ? </h2>
+      <h1 class="titre__slogan">Et si il y avait des alternatives aux montres rares et chères qui pourraient nous plaire
+        tout autant ? </h1>
     </section>
     <section class="section" id="intro">
       <div class="section__gridtxtgauche">
@@ -71,25 +107,23 @@
             fascinant des montres. Nous comprenons que certains modèles sont difficiles à se procurer ou tout
             simplement
             trop chers, c'est pourquoi notre application propose des alternatives à ces montres
-            populaires.</span><br><br>
+            populaires.</span>
+        </p>
+        <p class="txt">
           Cette
           application met en avant une sélection de montres de haute qualité avec des fonctionnalités avancées. Grâce
           à
           notre interface intuitive, vous pouvez facilement naviguer dans notre catalogue et découvrir des montres que
-          vous n'avez jamais vues auparavant.<br><br>
+          vous n'avez jamais vues auparavant.
+        </p>
 
-          De plus, nous offrons des suggestions alternatives pour les modèles qui peuvent être difficiles à trouver ou
-          trop chers. Nous voulons que tous les amateurs d'horlogerie aient accès à des montres de qualité sans avoir
-          à
-          dépenser une fortune.
-        <p>
         <div>
-          <a class="lien" href="https://xd.adobe.com/view/491ae41d-b8a6-4d70-ab29-1c7fd1450ff2-1c49/">Rejoindre notre
-            communauté</a>
+          <a class="lien" href="https://xd.adobe.com/view/491ae41d-b8a6-4d70-ab29-1c7fd1450ff2-1c49/">L'évolution de
+            cette page</a>
           <div class="ligne--lien"></div>
         </div>
       </div>
-      <h3 class="titre__vertical titre__vertical--droite">INTRO</h3>
+      <h2 class="titre__vertical titre__vertical--droite">INTRO</h2>
     </section>
     <div class="bandeau">
       <img src="assets/images/bandeau.png" alt="Crokis de montres en noir sur fond blanc indiquant plusieurs détails">
@@ -99,7 +133,9 @@
         <p class="txt"><span class="txt--bold">Dans le cadre de mon projet d'application sur l'horlogerie, j'ai cherché
             à trouver une problématique réelle en m'adressant directement aux utilisateurs potentiels. Pour ce faire,
             j'ai mené des interviews et des sondages auprès de collectionneurs de montres pour connaître leurs besoins
-            et leurs attentes.</span><br><br>
+            et leurs attentes.</span>
+        </p>
+        <p class="txt">
           Ces échanges m'ont permis de recueillir des données précieuses sur les critères de sélection des
           collectionneurs lors de l'achat d'une montre, les fonctionnalités qu'ils apprécient le plus, ainsi que les
           difficultés qu'ils rencontrent lorsqu'ils cherchent à trouver des alternatives de qualité à des prix
@@ -109,7 +145,7 @@
           adaptée.
 
           Grâce à cette approche centrée sur l'utilisateur, j'ai pu trouver une problématique réelle.
-        <p>
+        </p>
         <div>
           <a href="interview.html" class="lien">Résumé des interviews</a>
           <div class="ligne--lien"></div>
@@ -128,14 +164,16 @@
         <div>
           <p class="txt"><span class="txt--bold">J'ai interviewer des particuliers, des revendeurs de montres vintages
               et
-              également des créateurs de contenus.</span><br><br>Je remercie particulièrement Joah de la chaine "Montres
+              également des créateurs de contenus.</span>
+          </p>
+          <p class="txt">Je remercie particulièrement Joah de la chaine "Montres
             et moi".
-          <p>
-            <a class="lien lien--ytb" href="https://www.youtube.com/@MontresMoi">Voir la chaine YouTube</a>
+          </p>
+          <a class="lien lien--ytb" href="https://www.youtube.com/@MontresMoi">Voir la chaine YouTube</a>
         </div>
 
       </div>
-      <h3 class="titre__vertical titre__vertical--gauche">RENCONTRES</h3>
+      <h2 class="titre__vertical titre__vertical--gauche">RENCONTRES</h2>
 
     </section>
     <section class="section" id="prob">
@@ -143,7 +181,7 @@
         <p class="txt"><span class="txt--bold">Lors des interviews avec des collectionneurs de montres, trois
             problématiques reviennent constamment. </span>
         <p>
-        <h4 class="titre__number">01</h4>
+        <h3 class="titre__number">01</h3>
         <p class="txt">La première concerne l'élitisme qui règne dans le milieu de l'horlogerie. En effet, beaucoup de
           collectionneurs se sentent exclus de ce monde réservé aux connaisseurs et aux riches. Les marques de luxe,
           telles que Rolex, Patek Philippe ou Audemars Piguet, sont souvent considérées comme inaccessibles pour les
@@ -153,24 +191,24 @@
           mal conseillés dans les boutiques horlogères. Ils peuvent se sentir intimidés par les vendeurs ou les autres
           clients, qui connaissent mieux l'histoire de la marque ou les spécificités techniques des montres.
         <p>
-        <h4 class="titre__number">02</h4>
+        <h3 class="titre__number">02</h3>
         <p class="txt">La deuxième problématique concerne le fait que certains modèles sont très difficiles à se
           procurer ou même trop chers pour la plupart des collectionneurs. En effet, les marques de luxe produisent
           souvent des éditions limitées ou des modèles très exclusifs, ce qui rend la tâche difficile pour les
           collectionneurs qui souhaitent acquérir ces montres.
 
         <p>
-        <h4 class="titre__number">03</h4>
+        <h3 class="titre__number">03</h3>
         <p class="txt">De plus, la flambée des prix dans l'horlogerie de luxe est un sujet de préoccupation pour
           beaucoup de collectionneurs. Les montres haut de gamme ont vu leurs prix augmenter considérablement ces
           dernières années, rendant ces montres inabordables pour de nombreux passionnés.
         <p>
       </div>
-      <h3 class="titre__vertical titre__vertical--droite">PROBLEMES</h3>
+      <h2 class="titre__vertical titre__vertical--droite">PROBLEMES</h2>
     </section>
     <div class="ruban">
-      <h5 class="ruban__el">solutions solutions solutions solutions solutions solutions&nbsp;</h5>
-      <h5 class="ruban__el">solutions solutions solutions solutions solutions solutions&nbsp;</h5>
+      <h2 class="ruban__el">solutions solutions solutions solutions solutions solutions&nbsp;</h2>
+      <h2 class="ruban__el">solutions solutions solutions solutions solutions solutions&nbsp;</h2>
     </div>
     <section class="section" id="solu">
       <div class="section__gridtxtdroite">
@@ -181,29 +219,29 @@
 
           </span>
         <p>
-        <h4 class="titre__number">01</h4>
+        <h3 class="titre__number">01</h3>
         <p class="txt">Cette solution permet de briser les barrières de l'élitisme et de rendre l'horlogerie accessible
           à un plus grand nombre d'amateurs. Les utilisateurs peuvent ainsi découvrir de nouvelles marques et de
           nouveaux modèles de montres, tout en bénéficiant de conseils de la part de la communauté.
         <p>
-        <h4 class="titre__number">02</h4>
+        <h3 class="titre__number">02</h3>
         <p class="txt">L'application permet également de filtrer les résultats en fonction des critères de recherche,
           tels que le prix, la marque, le style, etc. Elle offre ainsi une expérience personnalisée et adaptée aux
           besoins de chaque utilisateur.
 
         <p>
-        <h4 class="titre__number">03</h4>
+        <h3 class="titre__number">03</h3>
         <p class="txt">En résumé, ManyWatch permet de démocratiser l'accès à l'horlogerie en offrant des alternatives
           abordables et de qualité aux montres chères ou rares, tout en bénéficiant des connaissances et des conseils de
           la communauté.
         <p>
       </div>
-      <h3 class="titre__vertical titre__vertical--gauche">SOLUTIONS</h3>
+      <h2 class="titre__vertical titre__vertical--gauche">SOLUTIONS</h2>
 
     </section>
     <div class="ruban">
-      <h5 class="ruban__el">modules modules modules modules modules modules modules modules&nbsp;</h5>
-      <h5 class="ruban__el">modules modules modules modules modules modules modules modules&nbsp;</h5>
+      <h2 class="ruban__el">modules modules modules modules modules modules modules modules&nbsp;</h2>
+      <h2 class="ruban__el">modules modules modules modules modules modules modules modules&nbsp;</h2>
     </div>
     <section class="section" id="mod">
       <div class="section__gridtxtgauche">
@@ -212,37 +250,25 @@
             d'un système de barre de recherche pour faciliter la recherche de montres spécifiques, ainsi qu'une
             fonctionnalité permettant aux utilisateurs de marquer des montres en tant que "favoris".</span>
         <p>
-        <h4 class="titre__number">01</h4>
+          <img src="assets/images/barre de recherche crokis.png" class="crokis_modules">
         <p class="txt">Je pense que l'ajout d'un système de recherche faciliterait grandement la navigation dans
           l'application. Les utilisateurs pourraient entrer des termes de recherche tels que le nom de la marque ou le
           type de montre qu'ils recherchent, et l'application afficherait les résultats pertinents. Cela aiderait les
           utilisateurs à trouver rapidement les montres qui les intéressent sans avoir à parcourir de longues listes ou
           à naviguer à travers plusieurs menus.
-
-
-        <p>
-        <h4 class="titre__number">02</h4>
+        </p>
+        <img src="assets/images/like favoris crokis.png" class="crokis_modules">
         <p class="txt">La fonctionnalité de marquage de montres en tant que favoris serait également utile pour les
           utilisateurs. Ils pourraient facilement ajouter des montres qu'ils aiment à une liste de favoris, ce qui leur
           permettrait de les retrouver facilement plus tard. Cette fonctionnalité est particulièrement utile pour les
           utilisateurs qui souhaitent acheter une montre à l'avenir et qui souhaitent les garder en mémoire.
-
-
-
-        <p>
-        <h4 class="titre__number">03</h4>
-        <p class="txt">En résumé, j'ai pris en compte ces différents modules pour améliorer l'expérience de
-          l'utilisateur dans mon application de montre. La barre de recherche permettrait de trouver facilement des
-          montres spécifiques, tandis que la fonctionnalité de marquage de favoris faciliterait la gestion de montres
-          préférées. J'espère que ces fonctionnalités rendront l'application plus utile et agréable à utiliser pour les
-          amateurs de montres.
-        <p>
+        </p>
       </div>
-      <h3 class="titre__vertical titre__vertical--droite">MODULES</h3>
+      <h2 class="titre__vertical titre__vertical--droite">MODULES</h2>
     </section>
     <div class="ruban">
-      <h5 class="ruban__el">Un exemple d'alternative. Un exemple d'alternative.&nbsp;</h5>
-      <h5 class="ruban__el">Un exemple d'alternative. Un exemple d'alternative.&nbsp;</h5>
+      <h2 class="ruban__el">Un exemple d'alternative. Un exemple d'alternative.&nbsp;</h2>
+      <h2 class="ruban__el">Un exemple d'alternative. Un exemple d'alternative.&nbsp;</h2>
     </div>
     <section class="section" id="exemp">
       <div class="section__gridtxtdroite">
@@ -250,7 +276,7 @@
             en raison de son design classique et de sa qualité supérieure. Cependant, son prix élevé peut rendre son
             achat inaccessible pour de nombreuses personnes.
           </span>
-        <p>
+        </p>
         <div class="img__exemple">
           <div class="img__exemple__el"></div>
           <div class="img__exemple__el img__exemple__el--bis"></div>
@@ -260,22 +286,24 @@
           look similaire à celui de la Dayjust sans dépenser une fortune. La Seiko 5 est une montre abordable qui offre
           une qualité respectable et qui est souvent considérée comme une alternative à la Rolex Dayjust. Elle est
           fabriquée avec des matériaux de qualité et offre une précision fiable grâce à son mouvement automatique.
-          <br><br>
-          Bien que la Seiko 5 ne soit pas une Rolex authentique, elle offre des caractéristiques similaires à un prix
+        </p>
+        <p class="txt">Bien que la Seiko 5 ne soit pas une Rolex authentique, elle offre des caractéristiques similaires
+          à un prix
           beaucoup plus abordable, ce qui en fait une option populaire pour ceux qui cherchent une montre de qualité
           sans dépenser une fortune.
-          <br><br>
-          <span class="txt--bold">En fin de compte, le choix entre une Rolex Dayjust ou une alternative plus abordable
+        </p>
+        <p class="txt"><span class="txt--bold">En fin de compte, le choix entre une Rolex Dayjust ou une alternative
+            plus abordable
             comme la Seiko 5 dépend
             de vos préférences personnelles et de votre budget, mais il est important de se rappeler que la qualité peut
             être accessible à un prix raisonnable.</span>
         </p>
       </div>
-      <h3 class="titre__vertical titre__vertical--gauche">EXEMPLES</h3>
+      <h2 class="titre__vertical titre__vertical--gauche">EXEMPLES</h2>
     </section>
     <div class="ruban">
-      <h5 class="ruban__el">La conception et une passion.&nbsp;</h5>
-      <h5 class="ruban__el">La conception et une passion.&nbsp;</h5>
+      <h2 class="ruban__el">La conception et une passion. La conception et une passion.&nbsp;</h2>
+      <h2 class="ruban__el">La conception et une passion. La conception et une passion.&nbsp;</h2>
     </div>
     <section class="section" id="concep">
       <div class="section__gridtxtgauche">
@@ -284,40 +312,41 @@
             moi : l'horlogerie. Depuis mon plus jeune âge, je suis fasciné par le monde complexe et minutieux des
             montres,
             par leur mécanisme précis et leur esthétique intemporelle. J'ai donc choisi de consacrer mon site à cette
-            passion dévorante qui ne cesse de grandir en moi.</span><br><br>
+            passion dévorante qui ne cesse de grandir en moi.</span>
+        </p>
 
-          Le choix du thème d'une application horlogère pour mon site était une évidence. Je voulais créer un espace où
+        <p class="txt">Le choix du thème d'une application horlogère pour mon site était une évidence. Je voulais créer
+          un espace où
           les amateurs de montres, tout comme moi, pourraient trouver des informations approfondies, des critiques
           objectives et des actualités passionnantes sur le monde horloger. Mon but était de partager ma passion avec
           d'autres personnes partageant les mêmes intérêts et de créer une communauté vibrante autour de cette
-          fascination commune pour l'horlogerie.<br><br>
+          fascination commune pour l'horlogerie.
+        </p>
 
-          En ce qui concerne le design de mon site, j'ai opté pour un style minimaliste et classique, directement
+        <p class="txt">En ce qui concerne le design de mon site, j'ai opté pour un style minimaliste et classique,
+          directement
           inspiré des designs des montres elles-mêmes. J'ai cherché à capturer l'essence même de l'horlogerie en
           utilisant des lignes épurées, des couleurs sobres et des typographies élégantes. Chaque détail a été
           soigneusement pensé pour refléter l'artisanat minutieux et le raffinement qui caractérisent les montres haut
-          de gamme.<br><br>
+          de gamme.
+        </p>
 
-          J'ai voulu que mon site offre une expérience visuelle cohérente avec l'univers horloger. En naviguant sur les
+        <p class="txt">J'ai voulu que mon site offre une expérience visuelle cohérente avec l'univers horloger. En
+          naviguant sur les
           différentes pages, les visiteurs auront l'impression d'explorer les cadrans complexes d'une montre de luxe, où
           chaque élément est à sa place et contribue à l'harmonie générale. Le design minimaliste permet également de
           mettre en valeur les photographies détaillées des montres, en mettant l'accent sur leurs caractéristiques
-          uniques et leur beauté intemporelle.<br><br>
+          uniques et leur beauté intemporelle.
+        </p>
 
-          À travers mon site, j'aspire à transmettre ma passion pour l'horlogerie et à inspirer d'autres personnes à
+        <p class="txt">À travers mon site, j'aspire à transmettre ma passion pour l'horlogerie et à inspirer d'autres
+          personnes à
           plonger dans cet univers captivant. Je souhaite offrir aux visiteurs une expérience immersive qui les
           transporte dans le monde fascinant des montres, où l'histoire, la technologie et l'élégance se
-          rejoignent.<br><br>
-
-          <span class="txt--bold">En résumé, j'ai choisi de créer mon site sur le thème d'une application
-            horlogère car cette passion m'anime
-            profondément. Le design minimaliste et classique que j'ai adopté rend hommage à l'artisanat horloger et
-            offre
-            aux visiteurs une expérience visuelle harmonieuse et immersive. J'espère ainsi partager ma passion avec le
-            plus grand nombre et créer une communauté autour de cette fascination commune pour l'horlogerie.</span>
-        <p>
+          rejoignent.
+        </p>
       </div>
-      <h3 class="titre__vertical titre__vertical--droite">CONCEPTION</h3>
+      <h2 class="titre__vertical titre__vertical--droite">CONCEPTION</h2>
     </section>
 
   </main>
